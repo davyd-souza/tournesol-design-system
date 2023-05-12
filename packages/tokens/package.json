@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "@tournesol-ui/ts-config": "*",
+    "typescript": "^5.0.4"
+  }
 }
