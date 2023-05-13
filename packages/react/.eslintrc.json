@@ -1,0 +1,3 @@
+{
+  "extends": "@tournesol-ui/eslint-config"
+}
