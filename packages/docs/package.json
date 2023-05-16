@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@tournesol-ui/eslint-config": "*",
+    "@tournesol-ui/ts-config": "*",
     "@tournesol-ui/react": "*",
     "@tournesol-ui/tokens": "*",
     "polished": "^4.2.2",
