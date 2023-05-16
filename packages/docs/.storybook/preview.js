@@ -1,4 +1,8 @@
+// DEPENDENCY
 import { themes } from '@storybook/theming'
+
+// STYLE
+import '../src/styles/global.css'
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
