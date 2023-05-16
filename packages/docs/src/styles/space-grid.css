@@ -1,0 +1,43 @@
+table {
+  table-layout: auto;
+  width: 100%;
+
+  border-collapse: collapse;
+
+  font-family: 'Nunito Sans', sans-serif;
+  color: #C9CDCF;
+}
+
+table > caption {
+  text-align: start;
+  padding-block: 1rem;
+}
+
+tr > *:first-child {
+  padding-inline-start: 0;
+  padding-inline-end: 1rem;
+}
+
+tr > :is(th, td) {
+  text-align: left;
+
+  padding-block: 0.75rem;
+  padding-inline: 1rem;
+}
+
+tbody > tr {
+  border-block-width: 1px;
+  border-block-style: solid;
+  border-block-color: #323238;
+}
+
+.space-preview {
+  height: 1rem;
+  border-radius: 0.125rem;
+}
+
+@media (max-width: 640px) {
+  .table__space-preview {
+    display: none;
+  }
+}
