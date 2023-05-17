@@ -8,19 +8,21 @@ import '../../styles/space-grid.css'
 export function SpaceGrid() {
   return (
     <Unstyled>
-      <table className="table">
-        <caption className="table__title">Spacing scale and values</caption>
+      <table className="token-table">
+        <caption className="token-table__title">
+          Spacing scale and values
+        </caption>
 
-        <thead className="table__header">
-          <tr className="table__header-row">
+        <thead>
+          <tr className="token-table__row">
             <th>Name</th>
             <th>Size</th>
             <th>Pixels</th>
-            <th className="table__space-preview sr-only">Preview</th>
+            <th className="token-table__data-preview sr-only">Preview</th>
           </tr>
         </thead>
 
-        <tbody className="table__body">
+        <tbody className="token-table__body">
           {Object.entries(space).map(([key, value]) => {
             const isRem = value.toString().indexOf('rem') !== -1
 
@@ -29,17 +31,17 @@ export function SpaceGrid() {
               : Number(value.toString().match(/[+-]?\d+(\.\d+)?/g))
 
             return (
-              <tr key={key}>
+              <tr key={key} className="token-table__row">
                 <td>{key}</td>
                 <td>{value}</td>
                 <td>{valueInPx}px</td>
-                <td className="table__space-preview">
+                <td className="token-table__data-preview">
                   <div
                     style={{
                       width: valueInPx,
                       backgroundColor: colors.yellow400,
                     }}
-                    className="space-preview"
+                    className="table-token__space-preview"
                   />
                 </td>
               </tr>
