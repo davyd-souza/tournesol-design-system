@@ -1,5 +1,5 @@
 // DEPENDENCY
-import { ComponentProps } from 'react'
+import { ComponentProps, ElementType } from 'react'
 
 // STYLE
 import { styled } from '../styles'
@@ -15,4 +15,6 @@ export const Box = styled('div', {
   borderRadius: '$2xl',
 })
 
-export type BoxProps = ComponentProps<typeof Box> & {}
+export type BoxProps = ComponentProps<typeof Box> & {
+  as?: ElementType
+}
