@@ -6,5 +6,6 @@ export const radii = {
   lg: '8px', // .5rem
   xl: '12px', // .75rem
   '2xl': '16px', // 1rem
+  '3xl': '24px', // 1.5rem
   full: '9999px',
 }
