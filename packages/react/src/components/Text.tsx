@@ -33,6 +33,7 @@ export const Text = styled('p', {
   },
 })
 
+// TYPE
 export type TextProps = ComponentProps<typeof Text> & {
   as?: ElementType
 }

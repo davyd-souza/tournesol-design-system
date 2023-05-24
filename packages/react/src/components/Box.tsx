@@ -15,6 +15,7 @@ export const Box = styled('div', {
   borderRadius: '$2xl',
 })
 
+// TYPE
 export type BoxProps = ComponentProps<typeof Box> & {
   as?: ElementType
 }
