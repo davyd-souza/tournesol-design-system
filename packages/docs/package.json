@@ -25,10 +25,11 @@
     "vite": "^4.3.5"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.9",
     "@tournesol-ui/eslint-config": "*",
-    "@tournesol-ui/ts-config": "*",
     "@tournesol-ui/react": "*",
     "@tournesol-ui/tokens": "*",
+    "@tournesol-ui/ts-config": "*",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
