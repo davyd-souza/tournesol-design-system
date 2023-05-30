@@ -45,3 +45,5 @@ export const TextArea = styled('textarea', {
 
 // TYPE
 export type TextAreaProps = ComponentProps<typeof TextArea> & {}
+
+TextArea.displayName = 'TextArea'
