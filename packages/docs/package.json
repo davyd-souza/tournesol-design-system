@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.0.9",
+    "@storybook/addon-a11y": "^7.0.18",
     "@tournesol-ui/eslint-config": "*",
     "@tournesol-ui/react": "*",
     "@tournesol-ui/tokens": "*",
