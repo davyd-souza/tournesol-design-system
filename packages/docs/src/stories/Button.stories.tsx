@@ -10,6 +10,42 @@ export default {
   component: Button,
   args: {
     children: 'Send',
+    variant: 'primary',
+    size: 'md',
+    disabled: false,
+  },
+  argTypes: {
+    variant: {
+      description: 'Control button appearance',
+      options: ['primary', 'neutral'],
+      control: { type: 'inline-radio' },
+      table: {
+        type: { summary: '"primary" | "neutral"' },
+        defaultValue: { summary: '"primary"' },
+      },
+    },
+    size: {
+      description: 'Control button size',
+      options: ['sm', 'md', 'lg'],
+      control: {
+        type: 'inline-radio',
+      },
+      table: {
+        defaultValue: { summary: '"md"' },
+      },
+    },
+    disabled: {
+      description: 'Disable button',
+      control: {
+        type: 'boolean',
+      },
+      table: {
+        defaultValue: { summary: false },
+      },
+    },
+    onClick: {
+      action: 'click',
+    },
   },
 } as Meta<ButtonProps>
 
