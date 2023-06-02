@@ -11,6 +11,9 @@ const config = {
     name: "@storybook/react-vite",
     options: {},
   },
+  core: {
+    builder: '@storybook/builder-vite'
+  },
   docs: {
     autodocs: true,
   },
