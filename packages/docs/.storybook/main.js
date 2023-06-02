@@ -14,5 +14,12 @@ const config = {
   docs: {
     autodocs: true,
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/tournesol-design-system/'
+    }
+
+    return config
+  }
 };
 export default config;
